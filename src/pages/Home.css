@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+div#home {
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+}
+
+div#home div.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+div#home div.background {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+div#home div.background span {
+  font-size: 30vh;
+  height: 30vh;
+  line-height: 30vh;
+  font-family: 'Notable', sans-serif !important;
+  font-weight: bold;
+  color: #181818;
+}
+
+div#home div.foreground {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10vw;
+}
+
+div#home div.foreground div {
+  font-size: 21vh;
+  line-height: 21vh;
+  font-family: 'Permanent Marker', cursive;
+  color: #FFFFFF;
+}
