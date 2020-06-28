@@ -17,3 +17,7 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
+
+input:focus, button:focus {
+  outline: none;
+}
