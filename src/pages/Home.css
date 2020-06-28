@@ -41,7 +41,12 @@ div#home div.foreground {
   padding-left: 10vw;
 }
 
-div#home div.foreground div span {
+div#home div.foreground div.word {
+  display: flex;
+  flex-direction: row;
+}
+
+div#home div.foreground div.word div {
   font-size: 21vh;
   line-height: 21vh;
   color: #FFFFFF;
