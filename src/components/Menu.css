@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
-
 div#menu {
   position: absolute;
   z-index: 999;
@@ -22,5 +20,4 @@ div#menu div span {
   margin: 0px 15px;
   font-size: 18px;
   color: #FFFFFF;
-  font-family: 'Saira Condensed', sans-serif;
 }

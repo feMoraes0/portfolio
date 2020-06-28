@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 div#home {
-  background-color: #121212;
   width: 100vw;
   height: 100vh;
 }
@@ -42,9 +41,9 @@ div#home div.foreground {
   padding-left: 10vw;
 }
 
-div#home div.foreground div {
+div#home div.foreground div span {
   font-size: 21vh;
   line-height: 21vh;
-  font-family: 'Permanent Marker', cursive;
   color: #FFFFFF;
+  font-family: 'Permanent Marker', cursive;
 }

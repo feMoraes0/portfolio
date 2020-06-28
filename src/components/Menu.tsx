@@ -1,17 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Menu.css';
 
 const Menu = () => {
   return (
     <div id='menu'>
-      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-        <polyline points="16 18 22 12 16 6"></polyline>
-        <polyline points="8 6 2 12 8 18"></polyline>
-      </svg>
+      <Link to='/'>
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+      </Link>
       <div>
         <span>Projects</span>
         <span>About</span>
-        <span>Contact</span>
+        <Link to='/contact'>
+          <span>Contact</span>
+        </Link>
       </div>
     </div>
   );

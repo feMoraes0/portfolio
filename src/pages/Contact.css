@@ -1,0 +1,55 @@
+div#contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+div#contact form fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: none;
+}
+
+div#contact form fieldset label {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+div#contact form fieldset input, div#contact form fieldset textarea {
+  width: 40vw;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background: #252525;
+  color: #FFFFFF;
+}
+
+div#contact form fieldset textarea {
+  resize: none;
+}
+
+div#contact form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+div#contact form fieldset input:focus,
+div#contact form fieldset textarea:focus,
+div#contact form button:focus {
+  outline: none;
+}

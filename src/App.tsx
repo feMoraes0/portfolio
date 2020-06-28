@@ -1,13 +1,24 @@
 import React from 'react';
-import Home from './pages/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Menu from './components/Menu';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <div>
-      <Home />
-      <Menu />
-    </div>
+    <>
+      <Router>
+        <Menu/>
+        <Switch>
+          <Route path='/' exact>
+            <Home />
+          </Route>
+          <Route path='/contact'>
+            <Contact />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
