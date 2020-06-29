@@ -33,7 +33,7 @@ div#project div.carrousel-texts h3 {
 div#project div.carrousel-texts div.tags {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 5px;
   margin-bottom: 25px;
 }
 
@@ -47,6 +47,7 @@ div#project div.carrousel-texts div.tags div.tag {
 div#project div.carrousel-texts svg {
   width: 35px;
   height: 35px;
+  color: #FFFFFF;
 }
 
 div#project div.carrousel-cards {
@@ -60,10 +61,15 @@ div#project div.carrousel-cards {
 
 div#project div.carrousel-cards div.card-image {
   width: 80%;
+  height: 52vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div#project div.carrousel-cards div.card-image img {
-  width: 100%;
+  width: auto;
+  height: 100%;
 }
 
 div#project div.carrousel-cards div.controls {
