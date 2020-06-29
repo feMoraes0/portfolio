@@ -19,10 +19,9 @@ const Menu = () => {
   return (
     <div id='menu'>
       <Link to='/'>
-      <svg
+      <motion.svg
         stroke="currentColor"
         fill="none"
-        strokeWidth="2"
         viewBox="0 0 24 24"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -40,7 +39,7 @@ const Menu = () => {
           animate='animate'
           d="M8 6 2 12 8 18"
         />
-      </svg>
+      </motion.svg>
       </Link>
       <div>
         <Link to='/projects'>

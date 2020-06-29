@@ -13,7 +13,8 @@ div#menu {
 div#menu svg {
   width: 35px;
   height: 35px;
-  color: rgba(255, 255, 255, 1.0);
+  color: #FFFFFF;
+  stroke-width: 2;
 }
 
 div#menu div span {

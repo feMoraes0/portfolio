@@ -98,7 +98,7 @@ const Contact = () => {
         variants={divisionVariants}
       >
         <div className='divider' />
-        <p>or</p>
+        <p>OR</p>
         <div className='divider' />
       </motion.div>
       <div className="social">

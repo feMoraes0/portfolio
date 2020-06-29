@@ -48,6 +48,7 @@ div#project div.carrousel-texts svg {
   width: 35px;
   height: 35px;
   color: #FFFFFF;
+  stroke-width: 1;
 }
 
 div#project div.carrousel-cards {
@@ -98,6 +99,7 @@ div#project div.carrousel-cards div.controls button svg {
   width: 30px;
   height: 30px;
   color: #FFFFFF;
+  stroke-width: 1;
 }
 
 
