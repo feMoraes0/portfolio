@@ -81,11 +81,15 @@ div.social {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  color: #FFFFFF !important;
+}
+
+div.social a {
+  color: #FFFFFF !important;
 }
 
 div.social svg {
   stroke-width: 1;
   width: 35px;
   height: 35px;
-  color: #FFFFFF;
 }
