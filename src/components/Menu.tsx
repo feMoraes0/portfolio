@@ -43,9 +43,6 @@ const Menu = () => {
       </svg>
       </Link>
       <div>
-        <Link to='/about'>
-          <span>About</span>
-        </Link>
         <Link to='/projects'>
           <span>Projects</span>
         </Link>
