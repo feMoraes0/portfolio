@@ -9,7 +9,7 @@ const foregroundVariants = {
     opacity: 1,
     transition: {
       when: 'beforeChildren',
-      staggerChildren: 0.1,
+      staggerChildren: 0.02,
     }
   }
 }
@@ -23,10 +23,7 @@ const foregroundLetterVariants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.3,
-      opacity: {
-        duration: 2.0,
-      }
+      duration: 0.4,
     }
   }
 }
@@ -37,7 +34,7 @@ const backgroundVariants = {
     opacity: 1,
     transition: {
       when: 'beforeChildren',
-      staggerChildren: 0.3,
+      staggerChildren: 0.2,
       staggerDirection: 1,
     }
   }
