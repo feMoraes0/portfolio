@@ -2,6 +2,7 @@ div#contact {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -14,14 +15,14 @@ div#contact form {
 div#contact form fieldset {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 10px;
   border: none;
 }
 
 div#contact form fieldset label {
   color: #FFFFFF;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 div#contact form fieldset input, div#contact form fieldset textarea {
@@ -52,4 +53,39 @@ div#contact form fieldset input:focus,
 div#contact form fieldset textarea:focus,
 div#contact form button:focus {
   outline: none;
+}
+
+div.division {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.division div.divider {
+  width: 100px;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin: 0px 20px;
+}
+
+div.division p {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+div.social {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.social svg {
+  stroke-width: 1;
+  width: 35px;
+  height: 35px;
+  color: #FFFFFF;
 }
