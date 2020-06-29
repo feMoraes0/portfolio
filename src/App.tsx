@@ -1,16 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Project from './pages/Projects';
 
 const App = () => {
+  const location = useLocation();
   return (
     <>
-      <Router>
-        <Menu/>
-        <Switch>
+      <Menu/>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.key}>
           <Route path='/' exact>
             <Home />
           </Route>
@@ -21,7 +23,7 @@ const App = () => {
             <Project />
           </Route>
         </Switch>
-      </Router>
+      </AnimatePresence>
     </>
   );
 }

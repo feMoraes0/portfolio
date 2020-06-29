@@ -2,6 +2,11 @@ import React from 'react';
 import './Home.css';
 import { motion } from 'framer-motion';
 
+const homeVariants = {
+  initial: { opacity: 0 },
+  animate: {opacity: 1 },
+  exit: { opacity: 0 }
+}
 
 const foregroundVariants = {
   initial: { opacity: 0 },
@@ -52,12 +57,16 @@ const backgroundWordVariants = {
 
 const Home = () => {
   return (
-    <div id='home'>
+    <motion.div
+      id='home'
+      variants={homeVariants}
+      initial='initial'
+      animate='animate'
+      exit='exit'
+    >
       <motion.div
         className="section background"
         variants={backgroundVariants}
-        initial='initial'
-        animate='animate'
       >
         <motion.span variants={backgroundWordVariants}>NODEJS</motion.span>
         <motion.span variants={backgroundWordVariants}>REACTJS</motion.span>
@@ -66,8 +75,6 @@ const Home = () => {
       <motion.div
         className="section foreground"
         variants={foregroundVariants}
-        initial='initial'
-        animate='animate'
       >
         <div className='word'>
           <motion.div
@@ -90,7 +97,7 @@ const Home = () => {
           <motion.div variants={foregroundLetterVariants}>s</motion.div>
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 
