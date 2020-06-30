@@ -1,7 +1,7 @@
 <h1 align="center">Portfolio</h1>
 
 <p align="center">
-  <img width="500" src="animated-stack/animated_stack.gif">
+  <img width="600" src="https://github.com/feMoraes0/project-prints/blob/master/portfolio/portfolio.gif">
 </p>
 
 ## :rocket: Knowledges
