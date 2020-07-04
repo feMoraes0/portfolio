@@ -10,7 +10,7 @@ div#project {
 div#project div.carrousel-texts {
   width: 28vw;
   height: 100vh;
-  background-color: #202020;
+  background-color: #252525;
   padding: 0px 30px;
   display: flex;
   flex-direction: column;
@@ -83,7 +83,7 @@ div#project div.carrousel-cards div.controls {
 }
 
 div#project div.carrousel-cards div.controls button {
-  background-color: #202020;
+  background-color: #252525;
   border: none;
   display: flex;
   align-items: center;
