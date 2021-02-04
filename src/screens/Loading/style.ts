@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+interface LoadingContainerProps {
+  isVisible: boolean,
+}
+
 const LoadingContainer = styled.div`
   width: 100vw;
   height: 100vh;
@@ -9,7 +13,7 @@ const LoadingContainer = styled.div`
   top: 0;
   left: 0;
   z-index: 3;
-  display: flex;
+  display: ${(props: LoadingContainerProps) => props.isVisible ? 'flex' : 'none'};
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -4,7 +4,7 @@ import Loading from './screens/Loading';
 const App = () => {
   return (
     <>
-      <Loading />
+      <Loading isVisible={true} />
       <h1> Version 2.0 Coming soon </h1>
     </>
   );

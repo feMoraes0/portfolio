@@ -2,9 +2,13 @@ import React from 'react';
 import { LoadingContainer, LoadingIcon, LoadingIconLines } from './style';
 import { LoadingIconVariant, LoadingIconLinesVariant } from './animation';
 
-const Loading = () => {
+interface LoadingProps {
+  isVisible: boolean
+};
+
+const Loading = ({ isVisible }: LoadingProps) => {
   return (
-    <LoadingContainer>
+    <LoadingContainer isVisible={isVisible}>
       <LoadingIcon
         variants={LoadingIconVariant}
         initial='initial'
