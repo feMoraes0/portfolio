@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -13,13 +11,7 @@ body {
   max-width: 100vw;
   height: 100vh;
   max-height: 100vh;
-  background-color: #121212;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-button {
-  cursor: pointer;
-}
-input:focus, button:focus {
-  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
