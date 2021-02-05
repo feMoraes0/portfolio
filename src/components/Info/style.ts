@@ -6,12 +6,13 @@ const InfoContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 5vh 0px;
 `;
 
 const InfoImage = styled.img`
-  width: 150px;
-  height: 100%;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   margin-right: 25px;
 `;
