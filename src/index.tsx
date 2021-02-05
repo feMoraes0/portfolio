@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import Home from './screens/Home';
-import { BrowserRouter as Router, } from 'react-router-dom';
+import { GlobalTheme } from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Home />
-    </Router>
+    <GlobalTheme />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
