@@ -13,6 +13,7 @@ const FilterItem = styled.button`
   font-weight: 300;
   padding: 0px 12px;
   margin-right: 5px;
+  margin-top: 10px;
   font-size: 1.125rem;
   color: #aaa;
   cursor: pointer;

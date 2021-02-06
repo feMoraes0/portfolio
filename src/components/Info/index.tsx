@@ -2,13 +2,20 @@ import React from 'react';
 import { InfoContainer, InfoImage, InfoTextBox, InfoTextTitle, InfoTextSubtitle } from './style';
 
 const Info = () => {
+  const user = {
+    name: 'Fernando de Moraes',
+    bio: 'JavaScript/TypeScript and Flutter developer',
+    location: 'São Paulo',
+    image: 'https://avatars.githubusercontent.com/u/23365401?v=4'
+  };
+
   return (
     <InfoContainer>
-      <InfoImage src="https://media-exp1.licdn.com/dms/image/C4D03AQFolqc4rNjJrg/profile-displayphoto-shrink_800_800/0/1585579077027?e=1617840000&v=beta&t=XnTqbrR2xdMH8DMEmaTKXVCmnp_suVJ9IPsao6QZNao" alt="profile"/>
+      <InfoImage src={user.image} alt="profile"/>
       <InfoTextBox>
-        <InfoTextTitle>Fernando Moraes</InfoTextTitle>
-        <InfoTextSubtitle>JavaScript/TypeScript and Flutter developer</InfoTextSubtitle>
-        <InfoTextSubtitle>São Paulo</InfoTextSubtitle>
+        <InfoTextTitle>{user.name}</InfoTextTitle>
+        <InfoTextSubtitle>{user.bio}</InfoTextSubtitle>
+        <InfoTextSubtitle>{user.location}</InfoTextSubtitle>
       </InfoTextBox>
     </InfoContainer>
   );
