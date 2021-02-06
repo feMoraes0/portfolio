@@ -10,10 +10,11 @@ const FilterBox = styled.div`
 const FilterItem = styled.button`
   border: none;
   background-color: transparent;
+  font-weight: 300;
   padding: 0px 12px;
   margin-right: 5px;
   font-size: 1.125rem;
-  color: #888;
+  color: #aaa;
   cursor: pointer;
 
   &.active {

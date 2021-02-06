@@ -4,7 +4,7 @@ import { InfoContainer, InfoImage, InfoTextBox, InfoTextTitle, InfoTextSubtitle 
 const Info = () => {
   return (
     <InfoContainer>
-      <InfoImage src="https://avatars.githubusercontent.com/u/23365401?v=4" alt="profile"/>
+      <InfoImage src="https://media-exp1.licdn.com/dms/image/C4D03AQFolqc4rNjJrg/profile-displayphoto-shrink_800_800/0/1585579077027?e=1617840000&v=beta&t=XnTqbrR2xdMH8DMEmaTKXVCmnp_suVJ9IPsao6QZNao" alt="profile"/>
       <InfoTextBox>
         <InfoTextTitle>Fernando Moraes</InfoTextTitle>
         <InfoTextSubtitle>JavaScript/TypeScript and Flutter developer</InfoTextSubtitle>
