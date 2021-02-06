@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalTheme = createGlobalStyle`
   * {
-    font-family: 'Saira Semi Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
