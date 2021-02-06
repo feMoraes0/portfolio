@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   margin: 30px 0px;
   column-count: 4;
   column-gap: 10px;
 `;
 
-const GridBox = styled.div`
+const GridItem = styled(motion.div)`
   margin: 0;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -21,4 +22,4 @@ const Image = styled.img`
   grid-column: 1;
 `;
 
-export { Container, GridBox, Image };
+export { Container, GridItem, Image };

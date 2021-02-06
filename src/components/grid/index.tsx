@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container, GridBox, Image} from './style';
+import {Container, GridItem, Image} from './style';
+import { GridContainerVariant, GridItemVariant } from './animation';
 
 const images: Array<object> = [
   {
@@ -35,12 +36,12 @@ const images: Array<object> = [
 
 const Grid = () => {
   return (
-    <Container>
+    <Container variants={GridContainerVariant} initial='initial' animate='animate'>
       {
         images.map((image: any) => (
-          <GridBox>
+          <GridItem variants={GridItemVariant} >
             <Image src={image.url} />
-          </GridBox>
+          </GridItem>
         ))
       }
     </Container>
