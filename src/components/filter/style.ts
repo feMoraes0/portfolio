@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const FilterBox = styled.div`
+const FilterBox = styled(motion.div)`
   width: 100%;
   padding-bottom: 1vh;
   border-bottom: 1px solid #efefef;
   text-align: center;
 `;
 
-const FilterItem = styled.button`
+const FilterItem = styled(motion.button)`
   border: none;
   background-color: transparent;
   font-weight: 300;
