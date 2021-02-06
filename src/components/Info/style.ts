@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const InfoContainer = styled.div`
+const InfoContainer = styled(motion.div)`
   width: 100%;
   height: 150px;
   display: flex;
@@ -10,14 +11,14 @@ const InfoContainer = styled.div`
   margin: 5vh 0px;
 `;
 
-const InfoImage = styled.img`
+const InfoImage = styled(motion.img)`
   width: 120px;
   height: 120px;
   border-radius: 100%;
   margin-right: 25px;
 `;
 
-const InfoTextBox = styled.div`
+const InfoTextBox = styled(motion.div)`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -25,14 +26,14 @@ const InfoTextBox = styled.div`
   align-items: flex-start;
 `;
 
-const InfoTextTitle = styled.p`
+const InfoTextTitle = styled(motion.p)`
   font-size: 2.75rem;
   font-weight: 600;
   line-height: 3rem;
   color: #222;
 `;
 
-const InfoTextSubtitle = styled.p`
+const InfoTextSubtitle = styled(motion.p)`
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 2rem;

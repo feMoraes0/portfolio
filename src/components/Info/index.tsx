@@ -1,5 +1,6 @@
 import React from 'react';
 import { InfoContainer, InfoImage, InfoTextBox, InfoTextTitle, InfoTextSubtitle } from './style';
+import { InfoContainerVariant, InfoImageVariant, InfoTextBoxVariant, InfoTextVariant } from './animation';
 
 const Info = () => {
   const user = {
@@ -10,12 +11,12 @@ const Info = () => {
   };
 
   return (
-    <InfoContainer>
-      <InfoImage src={user.image} alt="profile"/>
-      <InfoTextBox>
-        <InfoTextTitle>{user.name}</InfoTextTitle>
-        <InfoTextSubtitle>{user.bio}</InfoTextSubtitle>
-        <InfoTextSubtitle>{user.location}</InfoTextSubtitle>
+    <InfoContainer variants={InfoContainerVariant} initial='initial' animate='animate'>
+      <InfoImage variants={InfoImageVariant} src={user.image} alt="profile"/>
+      <InfoTextBox variants={InfoTextBoxVariant}>
+        <InfoTextTitle variants={InfoTextVariant}>{user.name}</InfoTextTitle>
+        <InfoTextSubtitle variants={InfoTextVariant}>{user.bio}</InfoTextSubtitle>
+        <InfoTextSubtitle variants={InfoTextVariant}>{user.location}</InfoTextSubtitle>
       </InfoTextBox>
     </InfoContainer>
   );
