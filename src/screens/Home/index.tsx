@@ -12,7 +12,7 @@ const Home = () => {
       <GlobalContainer>
         <Info />
         <Filter />
-        <Grid />
+        <Grid filter="Python" />
       </GlobalContainer>
     </>
   );

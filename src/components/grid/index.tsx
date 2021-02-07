@@ -34,15 +34,24 @@ const images: Array<object> = [
   
 ];
 
-const Grid = () => {
+interface GridProps {
+  filter: string
+};
+
+const Grid = ({ filter}: GridProps) => {
   return (
     <Container variants={GridContainerVariant} initial='initial' animate='animate'>
       {
-        images.map((image: any) => (
-          <GridItem variants={GridItemVariant} >
-            <Image src={image.url} />
-          </GridItem>
-        ))
+        images.map((image: any) => {
+          if (filter !== "All" && image.language !== filter)
+            return null;
+
+          return (
+            <GridItem variants={GridItemVariant} >
+              <Image src={image.url} />
+            </GridItem>
+          )
+        })
       }
     </Container>
   );
