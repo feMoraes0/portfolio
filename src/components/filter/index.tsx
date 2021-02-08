@@ -13,19 +13,22 @@ const languages: Array<string> = [
   'Dart',
   'Python',
   'Ruby',
-  'Python'
 ];
 
-const Filter = () => {
-  const currentLanguage = 'All';
+interface FilterProps {
+  onUpdate: Function,
+  currentFilter: string,
+};
 
+const Filter = ({ onUpdate, currentFilter }: FilterProps ) => {
   return (
     <FilterBox variants ={FilterBoxVariant} initial='initial' animate='animate'>
       {
         languages.map((language: string) => (
           <FilterItem
             variants={FilterItemVariant}
-            className={ language === currentLanguage ? 'active' : '' }
+            className={ language === currentFilter ? 'active' : '' }
+            onClick={() => onUpdate(language)}
           >
             {language}
           </FilterItem>
