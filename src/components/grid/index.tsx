@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, GridItem, Image} from './style';
+import {Container, GridItem, Image, GridItemContent} from './style';
 import { GridContainerVariant, GridItemVariant } from './animation';
 
 const images: Array<object> = [
@@ -48,6 +48,9 @@ const Grid = ({ filter}: GridProps) => {
 
           return (
             <GridItem variants={GridItemVariant} >
+              <GridItemContent target='_blank' href="https://www.google.com.br">
+                <h5>React native online groceries application.</h5>
+              </GridItemContent>
               <Image src={image.url} />
             </GridItem>
           )
