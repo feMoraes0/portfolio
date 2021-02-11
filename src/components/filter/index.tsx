@@ -2,31 +2,19 @@ import React from 'react';
 import { FilterBox, FilterItem } from './style';
 import { FilterBoxVariant, FilterItemVariant } from './animation';
 
-const languages: Array<string> = [
-  'All',
-  'TypeScript',
-  'PHP',
-  'JavaScript',
-  'Vue',
-  'HTML',
-  'Java',
-  'Dart',
-  'Python',
-  'Ruby',
-  'Kothlin'
-];
-
 interface FilterProps {
+  options: Array<string>,
   onUpdate: Function,
   currentFilter: string,
 };
 
-const Filter = ({ onUpdate, currentFilter }: FilterProps ) => {
+const Filter = ({ options,  onUpdate, currentFilter }: FilterProps ) => {
   return (
     <FilterBox variants ={FilterBoxVariant} initial='initial' animate='animate'>
       {
-        languages.map((language: string) => (
+        options.map((language: string, index: number) => (
           <FilterItem
+            key={index}
             variants={FilterItemVariant}
             className={ language === currentFilter ? 'active' : '' }
             onClick={() => onUpdate(language)}
