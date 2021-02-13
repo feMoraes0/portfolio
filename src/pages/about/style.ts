@@ -14,16 +14,16 @@ const BackgroundContainer = styled.div`
   justify-content: center;
 `;
 
-const BackgroundImage = styled(motion.img)`
-  width: 34%;
-  position: absolute; 
-  cursor: pointer;
-  z-index: 2;
-`;
-
 const BackgroundSvg = styled(motion.svg)`
   width: 44%;
   z-index: 1;
+`;
+
+const BackgroundImage = styled(motion.img)`
+  width: 34%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
 `;
 
 const ForegroundContainer = styled.div`
@@ -39,7 +39,7 @@ const ForegroundContainer = styled.div`
   align-items: center;
 `;
 
-const Info = styled.div`
+const Info = styled(motion.div)`
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ const Info = styled.div`
 
 
   h1 {
-    font-size: 8rem;
+    font-size: 8em;
     color: #F7F7F7;
     letter-spacing: 0.45rem;
     font-weight: 900;
@@ -59,6 +59,16 @@ const Info = styled.div`
     letter-spacing: 0.45rem;
     font-weight: 900;
     text-align: right;
+  }
+
+  @media only screen and (max-width: 1366px) {
+    h1 {
+      font-size: 5.8rem;
+    }
+
+    h2 {
+      font-size: 4.4rem;
+    }
   }
 `;
 

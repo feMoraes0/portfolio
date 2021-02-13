@@ -1,6 +1,6 @@
 import React from 'react';
 import { AboutContainer, BackgroundContainer, BackgroundImage, BackgroundSvg, ForegroundContainer, Info } from './style';
-import { ImageVariants, SvgVariants } from './animations';
+import { ImageVariants, SvgVariants, TextVariants } from './animations';
 import AboutBackgroundImage from '../../assets/about-image.png';
 
 
@@ -8,13 +8,6 @@ const About = () => {
   return (
     <AboutContainer>
       <BackgroundContainer>
-        <BackgroundImage
-          variants={ImageVariants}
-          initial="initial"
-          animate="animate"
-          src={AboutBackgroundImage}
-          alt=""
-        />
         <BackgroundSvg
           variants={SvgVariants}
           initial="initial"
@@ -35,14 +28,22 @@ const About = () => {
             c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z"
           />
         </BackgroundSvg>
+        <BackgroundImage
+          variants={ImageVariants}
+          initial="initial"
+          animate="animate"
+          src={AboutBackgroundImage}
+          alt=""
+        />
+        
       </BackgroundContainer>
       <ForegroundContainer>
-        <Info>
+        <Info variants={TextVariants} initial="initial" animate="animate">
           <h1>Hello</h1>
           <h1>I am</h1>
           <h1>Fernando</h1>
         </Info>
-        <Info>
+        <Info variants={TextVariants} initial="initial" animate="animate">
           <h2>JavaScript</h2>
           <h2>Dart</h2>
           <h2>Python</h2>
