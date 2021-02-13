@@ -12,6 +12,7 @@ const GlobalTheme = createGlobalStyle`
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #292830;
   }
 `;
 

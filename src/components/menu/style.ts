@@ -14,7 +14,7 @@ const ItemText = styled.a`
   text-decoration: none;
   padding: 2vh 0px;
   text-align: center;
-  color: #222;
+  color: #F7F7F7;
   font-family: 'Lexend Mega', sans-serif;
 `;
 
