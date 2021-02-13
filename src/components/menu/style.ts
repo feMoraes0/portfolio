@@ -26,7 +26,7 @@ const TopItemMenu = styled(ItemText)`
 
 const BottomItemMenu = styled(ItemText)`
   width: 100vw;
-  top: 92.5vh;
+  top: 92vh;
   left: 0;
 `;
 
@@ -34,14 +34,14 @@ const LeftItemMenu = styled(ItemText)`
   width: 100vh;
   top: 0;
   left: 0;
-  transform: translate(-46.1vh, 46.1vh) rotate(90deg);
+  transform: translate(-46vh, 46vh) rotate(90deg);
 `;
 
 const RightItemMenu = styled(ItemText)`
   width: 100vh;
   top: 0;
-  right: 0vw;
-  transform: translate(46.1vh, 46.1vh) rotate(270deg);
+  right: 0;
+  transform: translate(46vh, 46vh) rotate(270deg);
 `;
 
 
