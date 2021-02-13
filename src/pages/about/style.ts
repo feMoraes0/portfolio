@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const AboutContainer = styled.div`
   width: 100vw;
@@ -13,14 +14,16 @@ const BackgroundContainer = styled.div`
   justify-content: center;
 `;
 
-const BackgroundImage = styled.img`
+const BackgroundImage = styled(motion.img)`
   width: 34%;
   position: absolute; 
   cursor: pointer;
+  z-index: 2;
 `;
 
-const BackgroundSvg = styled.svg`
+const BackgroundSvg = styled(motion.svg)`
   width: 44%;
+  z-index: 1;
 `;
 
 const ForegroundContainer = styled.div`

@@ -1,5 +1,6 @@
 import React from 'react';
 import { AboutContainer, BackgroundContainer, BackgroundImage, BackgroundSvg, ForegroundContainer, Info } from './style';
+import { ImageVariants, SvgVariants } from './animations';
 import AboutBackgroundImage from '../../assets/about-image.png';
 
 
@@ -7,8 +8,22 @@ const About = () => {
   return (
     <AboutContainer>
       <BackgroundContainer>
-        <BackgroundImage src={AboutBackgroundImage} alt=""/>
-        <BackgroundSvg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288">
+        <BackgroundImage
+          variants={ImageVariants}
+          initial="initial"
+          animate="animate"
+          src={AboutBackgroundImage}
+          alt=""
+        />
+        <BackgroundSvg
+          variants={SvgVariants}
+          initial="initial"
+          animate="animate"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 288 288"
+        >
           <linearGradient id="PSgrad_0" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
             <stop offset="0%" stopColor="rgb(95,54,152)" stopOpacity={1} />
             <stop offset="100%" stopColor="rgb(247,109,138)" stopOpacity={1} />
