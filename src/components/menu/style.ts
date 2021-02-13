@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const MenuContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  position: fixed;
+  z-index: 2;
 `;
 
 const ItemText = styled.a`
@@ -25,7 +26,7 @@ const TopItemMenu = styled(ItemText)`
 
 const BottomItemMenu = styled(ItemText)`
   width: 100vw;
-  bottom: 0;
+  top: 92.5vh;
   left: 0;
 `;
 
@@ -39,7 +40,7 @@ const LeftItemMenu = styled(ItemText)`
 const RightItemMenu = styled(ItemText)`
   width: 100vh;
   top: 0;
-  right: 0;
+  right: 0vw;
   transform: translate(46.1vh, 46.1vh) rotate(270deg);
 `;
 
