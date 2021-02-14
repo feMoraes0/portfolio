@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Menu from './components/menu';
-// import About from './pages/about';
-import Projects from './pages/projects';
+import App from './pages/app';
 import { GlobalTheme } from './theme';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalTheme />
-    <Menu />
-    <Projects />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -35,4 +35,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default { component: Projects, route: '/projects' };

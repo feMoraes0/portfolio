@@ -36,4 +36,4 @@ const About = () => {
   )
 };
 
-export default About;
+export default { component: About, route: '/' };
