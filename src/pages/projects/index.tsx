@@ -34,7 +34,7 @@ const Projects = () => {
           </ProjectList>
         </ContentProjectSide>
         <ContentImageSide variants={containerImageVariants}>
-          <BackgroundDetail width="100%" />
+          <BackgroundDetail width="100%" shapeNumber={1} />
           <ContentImage variants={imageVariants} src={Image} alt="" />
         </ContentImageSide>
       </Content>
