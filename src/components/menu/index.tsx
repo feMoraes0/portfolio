@@ -4,10 +4,10 @@ import { MenuContainer, TopItemMenu, BottomItemMenu, LeftItemMenu, RightItemMenu
 const Menu = () => {
   return (
     <MenuContainer>
-      <TopItemMenu href="/">About</TopItemMenu>
-      <BottomItemMenu href="/">Contact</BottomItemMenu>
-      <LeftItemMenu href="/">Projects</LeftItemMenu>
-      <RightItemMenu href="/">Experiences</RightItemMenu>
+      <TopItemMenu to="/">About</TopItemMenu>
+      <BottomItemMenu to="/contact">Contact</BottomItemMenu>
+      <LeftItemMenu to="/projects">Projects</LeftItemMenu>
+      <RightItemMenu to="/experiences">Experiences</RightItemMenu>
     </MenuContainer>
   )
 };

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const PageScaffoldContainer = styled.div`
+const PageScaffoldContainer = styled(motion.div)`
   width: 100vw;
   height: 100vh;
   position: fixed;

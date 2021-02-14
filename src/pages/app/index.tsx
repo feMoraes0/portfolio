@@ -12,8 +12,8 @@ const App = () => {
     <>
       <Menu />
       <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.key}>
-          <Route path={Projects.route}>
+        <Switch location={location} key={location.key} >
+          <Route path="/projects">
             <Projects.component />
           </Route>
 

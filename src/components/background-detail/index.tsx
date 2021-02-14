@@ -10,8 +10,6 @@ const BackgroundDetail = ({ width }: BackgroundDetailProps) => {
   return (
     <Svg
       variants={SvgVariants}
-      initial="initial"
-      animate="animate"
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       x="0px"

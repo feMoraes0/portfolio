@@ -8,13 +8,19 @@ import {
   ContentProjectSide,
   ProjectList,
 } from './style';
+import { containerVariants } from './animation';
 import Image from '../../assets/projects-image.png';
 import BackgroundDetail from '../../components/background-detail';
 import ProjectListItem from '../../components/project-list-item';
 
 const Projects = () => {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer
+      variants={containerVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <Title>These are some of my projects, you can find all of them <a href="http://www.github.com/femoraes0">here</a>.</Title>
       <Content>
         <ContentProjectSide>

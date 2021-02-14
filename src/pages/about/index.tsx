@@ -1,25 +1,31 @@
 import React from 'react';
 import { AboutContainer, BackgroundContainer, BackgroundImage, ForegroundContainer, Info } from './style';
-import { ImageVariants, TextVariants } from './animations';
+import { containerVariants, backgroundVariants, ImageVariants, TextVariants } from './animations';
 import AboutBackgroundImage from '../../assets/about-image.png';
 import BackgroundDetail from '../../components/background-detail';
 
 
 const About = () => {
   return (
-    <AboutContainer>
-      <BackgroundContainer>
+    <AboutContainer
+      variants={containerVariants}
+      initial="initial"
+      animate="animate"
+      exit="initial"
+    >
+      <BackgroundContainer
+        variants={backgroundVariants}
+      >
         <BackgroundDetail width="44%" />
         <BackgroundImage
           variants={ImageVariants}
-          initial="initial"
-          animate="animate"
           src={AboutBackgroundImage}
           alt=""
         />
-        
       </BackgroundContainer>
-      <ForegroundContainer>
+      <ForegroundContainer
+        variants={backgroundVariants}
+      >
         <Info variants={TextVariants} initial="initial" animate="animate">
           <h1>Hello</h1>
           <h1>I am</h1>

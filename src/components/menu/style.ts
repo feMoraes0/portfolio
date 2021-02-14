@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const MenuContainer = styled.div`
   width: 100vw;
@@ -6,7 +7,7 @@ const MenuContainer = styled.div`
   z-index: 2;
 `;
 
-const ItemText = styled.a`
+const ItemText = styled(Link)`
   font-size: 1.80rem;
   letter-spacing: 3px;
   font-weight: 500;

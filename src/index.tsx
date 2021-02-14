@@ -6,8 +6,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalTheme />
     <Router>
+      <GlobalTheme />
       <App />
     </Router>
   </React.StrictMode>,

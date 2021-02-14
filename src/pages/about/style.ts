@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-const AboutContainer = styled.div`
+const AboutContainer = styled(motion.div)`
   width: 100vw;
   height: 100vh;
 `;
 
-const BackgroundContainer = styled.div`
+const BackgroundContainer = styled(motion.div)`
   width: 100%;
   height: 100%;
   display: flex;
@@ -21,7 +21,7 @@ const BackgroundImage = styled(motion.img)`
   z-index: 2;
 `;
 
-const ForegroundContainer = styled.div`
+const ForegroundContainer = styled(motion.div)`
   width: 100vw;
   height: 100vh;
   padding: 0px 8vw;
