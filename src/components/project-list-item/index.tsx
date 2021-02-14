@@ -8,10 +8,12 @@ import {
   ContentSupport,
   ContentSubtitle
 } from './style';
+import { itemVariants } from './animation';
+
 
 const ProjectListItem = () => {
   return (
-    <ItemBox href="/">
+    <ItemBox variants={itemVariants} href="/">
       <ItemImage src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="" />
       <ItemContent>
         <ContentMain>

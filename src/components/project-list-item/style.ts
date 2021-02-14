@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const ItemBox = styled.a`
+const ItemBox = styled(motion.a)`
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;

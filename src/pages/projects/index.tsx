@@ -8,7 +8,8 @@ import {
   ContentProjectSide,
   ProjectList,
 } from './style';
-import { containerVariants } from './animation';
+import { hideShowVariants, containerImageVariants } from '../../global/animation';
+import { imageVariants, listVariants } from './animation';
 import Image from '../../assets/projects-image.png';
 import BackgroundDetail from '../../components/background-detail';
 import ProjectListItem from '../../components/project-list-item';
@@ -16,15 +17,15 @@ import ProjectListItem from '../../components/project-list-item';
 const Projects = () => {
   return (
     <ProjectsContainer
-      variants={containerVariants}
+      variants={hideShowVariants}
       initial="initial"
       animate="animate"
       exit="exit"
     >
-      <Title>These are some of my projects, you can find all of them <a href="http://www.github.com/femoraes0">here</a>.</Title>
+      <Title>These are some of my projects, you can find all of them <a target="_blanck" href="http://www.github.com/femoraes0">here</a>.</Title>
       <Content>
         <ContentProjectSide>
-          <ProjectList>
+          <ProjectList variants={listVariants}>
             <ProjectListItem />
             <ProjectListItem />
             <ProjectListItem />
@@ -32,9 +33,9 @@ const Projects = () => {
             <ProjectListItem />
           </ProjectList>
         </ContentProjectSide>
-        <ContentImageSide>
+        <ContentImageSide variants={containerImageVariants}>
           <BackgroundDetail width="100%" />
-          <ContentImage src={Image} alt="" />
+          <ContentImage variants={imageVariants} src={Image} alt="" />
         </ContentImageSide>
       </Content>
     </ProjectsContainer>

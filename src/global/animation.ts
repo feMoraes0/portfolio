@@ -1,17 +1,11 @@
-const ImageVariants = {
+const hideShowVariants = {
   initial: {
     opacity: 0,
-    y: 10
   },
   animate: {
     opacity: 1,
-    y: -10,
     transition: {
-      y: {
-        duration: 1,
-        yoyo: Infinity,
-        ease: 'easeInOut',
-      }
+      duration: 0.5,
     }
   },
   exit: {
@@ -22,14 +16,16 @@ const ImageVariants = {
   }
 };
 
-const TextVariants = {
+const containerImageVariants = {
   initial: {
     opacity: 0,
   },
   animate: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.3,
+      when: "beforeChildren",
+      staggerChildren: 0.5,
     }
   },
   exit: {
@@ -40,6 +36,4 @@ const TextVariants = {
   }
 };
 
-export { ImageVariants, TextVariants };
-
-
+export { hideShowVariants, containerImageVariants };

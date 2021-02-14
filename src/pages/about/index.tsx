@@ -1,6 +1,7 @@
 import React from 'react';
 import { AboutContainer, BackgroundContainer, BackgroundImage, ForegroundContainer, Info } from './style';
-import { containerVariants, backgroundVariants, ImageVariants, TextVariants } from './animations';
+import { ImageVariants, TextVariants } from './animations';
+import { hideShowVariants, containerImageVariants } from '../../global/animation';
 import AboutBackgroundImage from '../../assets/about-image.png';
 import BackgroundDetail from '../../components/background-detail';
 
@@ -8,13 +9,13 @@ import BackgroundDetail from '../../components/background-detail';
 const About = () => {
   return (
     <AboutContainer
-      variants={containerVariants}
+      variants={hideShowVariants}
       initial="initial"
       animate="animate"
-      exit="initial"
+      exit="exit"
     >
       <BackgroundContainer
-        variants={backgroundVariants}
+        variants={containerImageVariants}
       >
         <BackgroundDetail width="44%" />
         <BackgroundImage
@@ -24,7 +25,7 @@ const About = () => {
         />
       </BackgroundContainer>
       <ForegroundContainer
-        variants={backgroundVariants}
+        variants={containerImageVariants}
       >
         <Info variants={TextVariants} initial="initial" animate="animate">
           <h1>Hello</h1>

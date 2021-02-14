@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { PageScaffoldContainer } from '../../style';
+import { motion } from 'framer-motion';
+import { PageScaffoldContainer } from '../../global/style';
 
 const ProjectsContainer = styled(PageScaffoldContainer)`
   padding-top: 12vh;
@@ -29,7 +30,7 @@ const Content = styled.div`
   align-items: center;
 `;
 
-const ContentImageSide = styled.div`
+const ContentImageSide = styled(motion.div)`
   width: 50%;
   height: 90%;
   display: flex;
@@ -37,7 +38,7 @@ const ContentImageSide = styled.div`
   align-items: center;
 `;
 
-const ContentImage = styled.img`
+const ContentImage = styled(motion.img)`
   width: 25%;
   position: absolute;
   transform: translateY(-10%);
@@ -48,7 +49,7 @@ const ContentProjectSide = styled(ContentImageSide)`
   padding: 25px;
 `;
 
-const ProjectList = styled.div`
+const ProjectList = styled(motion.div)`
   width: 100%;
 `;
 
