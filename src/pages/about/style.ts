@@ -14,11 +14,6 @@ const BackgroundContainer = styled.div`
   justify-content: center;
 `;
 
-const BackgroundSvg = styled(motion.svg)`
-  width: 44%;
-  z-index: 1;
-`;
-
 const BackgroundImage = styled(motion.img)`
   width: 34%;
   position: absolute;
@@ -72,4 +67,4 @@ const Info = styled(motion.div)`
   }
 `;
 
-export { AboutContainer, BackgroundContainer, BackgroundImage, BackgroundSvg, ForegroundContainer, Info};
+export { AboutContainer, BackgroundContainer, BackgroundImage, ForegroundContainer, Info};
