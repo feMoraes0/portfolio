@@ -23,6 +23,7 @@ const Image = styled(motion.img)`
   position: absolute;
   z-index: 2;
   margin-left: 30%;
+  margin-bottom: 20px;
 `;
 
 const ContentInfoSide = styled.div`
