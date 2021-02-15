@@ -22,9 +22,9 @@ const Projects = () => {
       animate="animate"
       exit="exit"
     >
-      <Title>These are some of my projects, you can find all of them <a target="_blanck" href="http://www.github.com/femoraes0">here</a>.</Title>
       <Content>
         <ContentProjectSide>
+          <Title>These are some of my projects, you can find all of them <a target="_blanck" href="http://www.github.com/femoraes0">here</a>.</Title>
           <ProjectList variants={listVariants}>
             <ProjectListItem />
             <ProjectListItem />

@@ -14,6 +14,7 @@ const Title = styled.h1`
   font-size: 1.5rem;
   color: #F7F7F7;
   font-weight: 300;
+  margin-bottom: 20px;
 
   a {
     text-decoration: none;
@@ -47,6 +48,8 @@ const ContentImage = styled(motion.img)`
 
 const ContentProjectSide = styled(ContentImageSide)`
   padding: 25px;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ProjectList = styled(motion.div)`
