@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion'
 import Menu from '../../components/menu';
 import About from '../about';
 import Projects from '../projects';
+import Experiences from '../experiences';
 
 const App = () => {
   const location = useLocation();
@@ -13,7 +14,11 @@ const App = () => {
       <Menu />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key} >
-          <Route path="/projects">
+          <Route path={Experiences.route}>
+            <Experiences.component />
+          </Route>
+          
+          <Route path={Projects.route}>
             <Projects.component />
           </Route>
 
