@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { PageScaffoldContainer } from '../../global/style';
 
 const ContactContainer = styled(PageScaffoldContainer)`
@@ -37,4 +38,18 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-export { ContactContainer, ContactTitle, Form, Button };
+const ImageBackgroundBottom = styled(motion.img)`
+  position: absolute;
+  height: 400px;
+  bottom: 0;
+  right: 0;
+`;
+
+const ImageBackgroundTop = styled(motion.img)`
+  position: absolute;
+  height: 400px;
+  top: 0;
+  left: 0;
+`;
+
+export { ContactContainer, ContactTitle, Form, Button, ImageBackgroundTop, ImageBackgroundBottom };
