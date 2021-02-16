@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   ProjectsContainer,
   Title,
@@ -10,22 +10,15 @@ import {
 } from './style';
 import { hideShowVariants, containerImageVariants } from '../../global/animation';
 import { imageVariants, listVariants } from './animation';
-import Network from '../../helpers/network';
 import Image from '../../assets/projects-image.png';
 import BackgroundDetail from '../../components/background-detail';
 import ProjectListItem from '../../components/project-list-item';
 
-const Projects = () => {
-  const [projects, setProjects] = useState<Array<object>>([]);
+interface ProjectsProps {
+  projects: Array<object>
+};
 
-  const getProjects = async (): Promise<void> => {
-    const data = await Network.getData("https://api.github.com/users/feMoraes0/repos?sort=updated&per_page=5");
-    setProjects(data);
-  }
-
-  useEffect(() => {
-    getProjects();
-  }, []);
+const Projects = ({ projects }: ProjectsProps) => {
 
   return (
     <ProjectsContainer
