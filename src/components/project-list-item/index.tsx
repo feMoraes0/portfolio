@@ -9,6 +9,7 @@ import {
   ContentSubtitle
 } from './style';
 import { itemVariants } from './animation';
+import Project from '../../models/project';
 
 interface ProjectListItemProps {
   title: string,
@@ -19,13 +20,20 @@ interface ProjectListItemProps {
 };
 
 const ProjectListItem = ({ title, time, subtitle, url, language }: ProjectListItemProps) => {
+
+  const getConvertedTime = (time: string) => {
+    const splitted = time.split("T");
+    const dataParts = splitted[0].split("-");
+    return `${dataParts[2]}/${dataParts[1]}/${dataParts[0]}`;
+  }
+
   return (
     <ItemBox variants={itemVariants} target="_blank" href={url}>
-      <ItemImage src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="" />
+      <ItemImage src={Project.getImage(language)} alt={language} />
       <ItemContent>
         <ContentMain>
           <ContentTitle>{title}</ContentTitle>
-          <ContentSupport>{time}</ContentSupport>
+          <ContentSupport>{getConvertedTime(time)}</ContentSupport>
         </ContentMain>
         <ContentSubtitle>{subtitle}</ContentSubtitle>
       </ItemContent>

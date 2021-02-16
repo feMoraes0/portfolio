@@ -1,4 +1,8 @@
 import Network from '../helpers/network';
+import Typescript from '../assets/languages/typescript.png';
+import Javascript from '../assets/languages/javascript.png';
+import Php from '../assets/languages/php.png';
+import Dart from '../assets/languages/dart.png';
 
 export default {
   async get(quantity?:number, sort?:string): Promise<Array<object>> {
@@ -20,5 +24,17 @@ export default {
     });
 
     return convertData;
+  },
+
+  getImage(language: string):string {
+    if (language === "TypeScript")
+      return Typescript;
+    else if (language === "JavaScript")
+      return Javascript;
+    else if (language === "PHP")
+      return Php;
+    else if (language === "Dart")
+      return Dart;
+    return Javascript;
   }
 }
