@@ -13,7 +13,7 @@ const App = () => {
   const location = useLocation();
 
   const getProjects = async () => {
-    const fetchProjects = await Project.getProjects();
+    const fetchProjects = await Project.get();
     setProjects(fetchProjects);
   }
 

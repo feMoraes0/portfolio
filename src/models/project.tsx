@@ -1,7 +1,7 @@
 import Network from '../helpers/network';
 
 export default {
-  async getProjects(quantity?:number, sort?:string): Promise<Array<object>> {
+  async get(quantity?:number, sort?:string): Promise<Array<object>> {
     if(!quantity)
       quantity = 5;
     if(!sort)
