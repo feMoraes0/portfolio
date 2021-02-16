@@ -5,6 +5,7 @@ import Menu from '../../components/menu';
 import About from '../about';
 import Projects from '../projects';
 import Experiences from '../experiences';
+import Contact from '../contact';
 
 const App = () => {
   const location = useLocation();
@@ -16,6 +17,10 @@ const App = () => {
         <Switch location={location} key={location.key} >
           <Route path={Experiences.route}>
             <Experiences.component />
+          </Route>
+
+          <Route path={Contact.route}>
+            <Contact.component />
           </Route>
           
           <Route path={Projects.route}>
