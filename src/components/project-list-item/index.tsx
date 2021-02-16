@@ -10,17 +10,24 @@ import {
 } from './style';
 import { itemVariants } from './animation';
 
+interface ProjectListItemProps {
+  title: string,
+  time: string,
+  subtitle: string,
+  url: string,
+  language: string
+};
 
-const ProjectListItem = () => {
+const ProjectListItem = ({ title, time, subtitle, url, language }: ProjectListItemProps) => {
   return (
-    <ItemBox variants={itemVariants} href="/">
+    <ItemBox variants={itemVariants} target="_blank" href={url}>
       <ItemImage src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="" />
       <ItemContent>
         <ContentMain>
-          <ContentTitle>Project-title-or-name</ContentTitle>
-          <ContentSupport>4 hours ago</ContentSupport>
+          <ContentTitle>{title}</ContentTitle>
+          <ContentSupport>{time}</ContentSupport>
         </ContentMain>
-        <ContentSubtitle>[portfolio] Frontend built with ReactJS and Typescript.</ContentSubtitle>
+        <ContentSubtitle>{subtitle}</ContentSubtitle>
       </ItemContent>
     </ItemBox>
   );

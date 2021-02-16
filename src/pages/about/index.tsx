@@ -35,7 +35,6 @@ const About = () => {
         <Info variants={TextVariants} initial="initial" animate="animate">
           <h2>JavaScript</h2>
           <h2>Dart</h2>
-          <h2>Python</h2>
           <h2>TypeScript</h2>
         </Info>
       </ForegroundContainer>
