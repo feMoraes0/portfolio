@@ -56,6 +56,16 @@ const Info = styled(motion.div)`
     text-align: right;
   }
 
+  @media only screen and (max-width: 1600px) {
+    h1 {
+      font-size: 6.5rem;
+    }
+
+    h2 {
+      font-size: 5.2rem;
+    }
+  }
+
   @media only screen and (max-width: 1366px) {
     h1 {
       font-size: 5.8rem;
