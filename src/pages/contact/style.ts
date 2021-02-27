@@ -23,6 +23,10 @@ const Form = styled.form`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media only screen and (max-width: 375px) {
+    width: 95%;
+  }
 `;
 
 const Button = styled.button`
@@ -43,6 +47,10 @@ const ImageBackgroundBottom = styled(motion.img)`
   height: 400px;
   bottom: 0;
   right: 0;
+
+  @media only screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 const ImageBackgroundTop = styled(motion.img)`
@@ -50,6 +58,10 @@ const ImageBackgroundTop = styled(motion.img)`
   height: 400px;
   top: 0;
   left: 0;
+
+  @media only screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 export { ContactContainer, ContactTitle, Form, Button, ImageBackgroundTop, ImageBackgroundBottom };
