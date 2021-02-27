@@ -11,14 +11,30 @@ import Contact from '../contact';
 const App = () => {
   const [projects, setProjects] = useState<Array<object>>([]);
   const location = useLocation();
+  const pageTitleOptions = [
+    'Fernando Moraes',
+    'Full Stack Developer',
+    'JavaScript Developer'
+  ]
 
   const getProjects = async () => {
     const fetchProjects = await Project.get();
     setProjects(fetchProjects);
   }
 
+  const updatePageTitle = (index: number) => {
+    setTimeout(() => {
+      if( index >= pageTitleOptions.length )
+        index = 0;
+      document.title = pageTitleOptions[index];
+      updatePageTitle(++index);
+    }, 3000);
+  }
+
   useEffect(() => {
+    updatePageTitle(0);
     getProjects();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
