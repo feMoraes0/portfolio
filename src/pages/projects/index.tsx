@@ -38,7 +38,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                   title={project.name}
                   time={project.updated_at}
                   subtitle={project.description}
-                  url={project.html_url}
+                  url={project.url}
                   language={project.language}
                 />
               ))
