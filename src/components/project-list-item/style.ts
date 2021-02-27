@@ -44,7 +44,7 @@ const ContentSupport = styled.p`
   font-weight: 300;
   letter-spacing: 1.3px;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     display: none;
   }
 `;

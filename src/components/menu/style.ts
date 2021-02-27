@@ -7,7 +7,7 @@ const MenuContainer = styled.div`
   position: fixed;
   z-index: 2;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     display: absolute;
     bottom: 0;
     left: 0;
@@ -29,7 +29,7 @@ const Item = styled(Link)`
   padding: 2vh 0px;
   text-align: center;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     position: relative;
     padding: 0;
     color: transparent;
@@ -46,7 +46,7 @@ const ItemText = styled.span`
   color: #F7F7F7;
   font-family: 'Lexend Mega', sans-serif;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -56,7 +56,7 @@ const TopItemMenu = styled(Item)`
   top: 0;
   left: 0;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     width: 25%;
     height: 100%;
     border-top-left-radius: 10px;
@@ -68,7 +68,7 @@ const BottomItemMenu = styled(Item)`
   top: 92vh;
   left: 0;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     width: 25%;
     height: 100%;
     top: 0;
@@ -81,7 +81,7 @@ const LeftItemMenu = styled(Item)`
   left: 0;
   transform: translate(-46vh, 46vh) rotate(90deg);
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     width: 25%;
     height: 100%;
     transform: translate(0, 0);
@@ -94,7 +94,7 @@ const RightItemMenu = styled(Item)`
   right: 0;
   transform: translate(46vh, 46vh) rotate(270deg);
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     width: 25%;
     height: 100%;
     transform: translate(0, 0);
@@ -103,8 +103,12 @@ const RightItemMenu = styled(Item)`
 `;
 
 const MenuIcon = styled.img`
-  color: white;
   height: 30px;
+  display: none;
+
+  @media only screen and (max-width: 900px) {
+    display: initial;
+  }
 `;
 
 

@@ -24,7 +24,7 @@ const Form = styled.form`
   justify-content: flex-start;
   align-items: flex-start;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     width: 95%;
   }
 `;
@@ -48,7 +48,7 @@ const ImageBackgroundBottom = styled(motion.img)`
   bottom: 0;
   right: 0;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -59,7 +59,7 @@ const ImageBackgroundTop = styled(motion.img)`
   top: 0;
   left: 0;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     display: none;
   }
 `;

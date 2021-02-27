@@ -20,6 +20,10 @@ const BackgroundImage = styled(motion.img)`
   cursor: pointer;
   z-index: 2;
 
+  @media only screen and (max-width: 900px) {
+    width: 300px;
+  }
+
   @media only screen and (max-width: 375px) {
     width: 65%;
   }
@@ -37,7 +41,7 @@ const ForegroundContainer = styled(motion.div)`
   justify-content: space-between;
   align-items: center;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     padding: 0;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +90,7 @@ const Info = styled(motion.div)`
     }
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     justify-content: center;
     height: 100vh;
 

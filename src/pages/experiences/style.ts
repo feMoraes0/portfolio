@@ -8,7 +8,7 @@ const ExperienceContainer = styled(PageScaffoldContainer)`
   align-items: center;
   justify-content: flex-start;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     height: auto;
     position: relative;
     overflow-y: scroll;
@@ -23,7 +23,7 @@ const ContentImageSide = styled(motion.div)`
   flex-direction: center;
   align-items: center;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -44,7 +44,7 @@ const ContentInfoSide = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 0;
@@ -72,7 +72,7 @@ const CardBox = styled(motion.div)`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5vw;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2vh;
     margin-bottom: 60px;

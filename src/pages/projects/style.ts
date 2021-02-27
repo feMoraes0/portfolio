@@ -9,9 +9,9 @@ const ProjectsContainer = styled(PageScaffoldContainer)`
   align-items: center;
   justify-content: flex-start;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     overflow-y: scroll;
-    padding-top: 0;
+    padding-top: 10%;
   }
 `;
 
@@ -35,7 +35,7 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     flex-direction: column;
     height: auto;
   }
@@ -48,7 +48,7 @@ const ContentImageSide = styled(motion.div)`
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -65,7 +65,7 @@ const ContentProjectSide = styled(ContentImageSide)`
   display: flex;
   flex-direction: column;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     width: 100%;
     padding: 25px 0px;
   }
@@ -74,7 +74,7 @@ const ContentProjectSide = styled(ContentImageSide)`
 const ProjectList = styled(motion.div)`
   width: 100%;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 900px) {
     margin-bottom: 30px;
   }
 `;
