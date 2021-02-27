@@ -16,6 +16,10 @@ const ContentImageSide = styled(motion.div)`
   display: flex;
   flex-direction: center;
   align-items: center;
+
+  @media only screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 const Image = styled(motion.img)`
@@ -33,6 +37,10 @@ const ContentInfoSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media only screen and (max-width: 375px) {
+    width: 100%;
+  }
 `;
 
 const Title = styled(motion.h2)`
@@ -55,6 +63,11 @@ const CardBox = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5vw;
+
+  @media only screen and (max-width: 375px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2vh;
+  }
 `;
 
 const Card = styled(motion.div)`

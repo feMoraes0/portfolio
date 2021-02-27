@@ -33,7 +33,10 @@ const Experiences = () => {
       </ContentImageSide>
       <ContentInfoSide>
         <Title variants={cardTextVariants}>Companies</Title>
-        <Subtitle variants={cardTextVariants}>I'm really grateful for everything that these companies taught, and teach, me and all experiences which I had working there.</Subtitle>
+        <Subtitle variants={cardTextVariants}>
+          I'm really grateful for everything that these companies taught,
+          and teach, me and all experiences which I had working there.
+        </Subtitle>
         <CardBox variants={cardBoxVariants}>
           <Card variants={cardVariants}>
             <ImageCard src={Vivinho} alt="" />
