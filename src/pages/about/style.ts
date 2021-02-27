@@ -19,6 +19,10 @@ const BackgroundImage = styled(motion.img)`
   position: absolute;
   cursor: pointer;
   z-index: 2;
+
+  @media only screen and (max-width: 375px) {
+    width: 65%;
+  }
 `;
 
 const ForegroundContainer = styled(motion.div)`
@@ -32,6 +36,12 @@ const ForegroundContainer = styled(motion.div)`
   flex-diretion: row;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 375px) {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 const Info = styled(motion.div)`
@@ -42,7 +52,7 @@ const Info = styled(motion.div)`
 
 
   h1 {
-    font-size: 8em;
+    font-size: 8rem;
     color: #F7F7F7;
     letter-spacing: 0.45rem;
     font-weight: 900;
@@ -73,6 +83,22 @@ const Info = styled(motion.div)`
 
     h2 {
       font-size: 4.4rem;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    justify-content: center;
+    height: 100vh;
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: rgba(0, 0, 0, 0.55);
+      text-align: center;
     }
   }
 `;
