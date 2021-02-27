@@ -8,6 +8,11 @@ const ProjectsContainer = styled(PageScaffoldContainer)`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
+  @media only screen and (max-width: 375px) {
+    overflow-y: scroll;
+    padding-top: 0;
+  }
 `;
 
 const Title = styled.h1`
@@ -29,6 +34,11 @@ const Content = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 375px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 const ContentImageSide = styled(motion.div)`
@@ -37,6 +47,10 @@ const ContentImageSide = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 const ContentImage = styled(motion.img)`
@@ -50,6 +64,11 @@ const ContentProjectSide = styled(ContentImageSide)`
   padding: 25px;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 375px) {
+    width: 100%;
+    padding: 25px 0px;
+  }
 `;
 
 const ProjectList = styled(motion.div)`

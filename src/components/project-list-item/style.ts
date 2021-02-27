@@ -43,6 +43,10 @@ const ContentSupport = styled.p`
   color: #878787;
   font-weight: 300;
   letter-spacing: 1.3px;
+
+  @media only screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 const ContentSubtitle = styled.p`
