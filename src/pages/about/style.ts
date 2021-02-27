@@ -82,11 +82,11 @@ const Info = styled(motion.div)`
 
   @media only screen and (max-width: 1366px) {
     h1 {
-      font-size: 5.8rem;
+      font-size: 4.4rem;
     }
 
     h2 {
-      font-size: 4.4rem;
+      font-size: 4.2rem;
     }
   }
 
