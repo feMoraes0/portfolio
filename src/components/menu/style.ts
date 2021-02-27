@@ -5,6 +5,10 @@ const MenuContainer = styled.div`
   width: 100vw;
   position: fixed;
   z-index: 2;
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 `;
 
 const ItemText = styled(Link)`
