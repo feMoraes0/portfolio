@@ -73,6 +73,10 @@ const ContentProjectSide = styled(ContentImageSide)`
 
 const ProjectList = styled(motion.div)`
   width: 100%;
+
+  @media only screen and (max-width: 375px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export {
